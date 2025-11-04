@@ -1,8 +1,8 @@
-def num_words(text):
+def get_num_words(text):
     wordlist = text.split()
     return len(wordlist)
 
-def num_char(text):
+def get_num_char(text):
     char_count = {}
     for l in text:
         lowered = l.lower()
@@ -12,3 +12,16 @@ def num_char(text):
             char_count[lowered] = 1
 
     return char_count
+
+def get_sorted(letters):
+    sort_list = []
+    for l in letters:
+        sorting = {}
+        if l.isalpha() == True:
+            sorting["char"] = l
+            sorting["num"] = letters[l]
+            sort_list.append(sorting)
+    return sort_list
+
+def sort_on(items):
+    return items["num"]
