@@ -10,7 +10,6 @@ def main():
         sys.exit(1)
 
     book_path = sys.argv[1]
-    print(book_path)
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     num_char = get_num_char(text)
