@@ -5,7 +5,6 @@ import sys
 def main():
 
     if len(sys.argv) != 2:
-        print(len(sys.argv))
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
 
